@@ -1,0 +1,26 @@
+{
+  "name": "flatdango",
+  "version": "1.0.0",
+  "description": "application that allows users to purchase movie tickets from the theater",
+  "main": "./src/js/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sainamercy/Flatdango.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "javascript",
+    "json-db",
+    "fetch"
+  ],
+  "author": "Mercy Saina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sainamercy/Flatdango/issues"
+  },
+  "homepage": "https://github.com/sainamercy/Flatdango#readme"
+}
