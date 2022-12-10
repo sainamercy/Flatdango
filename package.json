@@ -4,7 +4,8 @@
   "description": "application that allows users to purchase movie tickets from the theater",
   "main": "./src/js/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "json-server --watch db.json"
   },
   "repository": {
     "type": "git",
