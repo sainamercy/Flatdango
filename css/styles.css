@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background: rgb(168, 48, 83);
+  background: radial-gradient(
+    circle,
+    rgba(168, 48, 83, 1) 0%,
+    rgba(2, 2, 3, 1) 100%
+  );
+  height: 100vh;
+}
+nav {
+  width: 100%;
+  background-color: rgb(248, 48, 88);
+  text-align: center;
+}
+h1 {
+  padding: 20px;
+  color: rgb(191, 189, 189);
+}
+h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+main {
+  color: azure;
+  height: 100%;
+  display: flex;
+  gap: 100px;
+  justify-content: space-evenly;
+}
+
+.moviesList {
+  width: 20%;
+  height: 100%;
+  margin: 20px;
+}
+ul {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(31, 29, 29);
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px 3px rgb(70, 44, 49);
+}
+.moviesList li {
+  padding: 18px;
+  border-bottom: 1px solid grey;
+  cursor: pointer;
+  list-style: none;
+  border-radius: 5px;
+}
+.moviesList li:last-child {
+  border-bottom: none;
+}
+
+.moviesDetails {
+  margin-top: 30px;
+  width: 80%;
+  display: flex;
+  height: 100%;
+}
+
+#movieDetails {
+  position: relative;
+  height: 85%;
+  width: 80%;
+  background-color: rgb(31, 29, 29);
+  border-radius: 20px;
+  margin: 20px;
+  box-shadow: 2px 2px 5px 3px rgb(70, 44, 49);
+}
+#movieDetails div {
+  margin-left: 10px;
+}
+h2 {
+  margin-bottom: 5px;
+  font-size: 1.5rem;
+}
+.moviesDetails img {
+  width: 100%;
+  height: 70%;
+  border-radius: 20px;
+}
+span {
+  color: aqua;
+}
+.customtitles {
+  color: rgb(248, 48, 88);
+}
+
+.custombtn {
+  position: absolute;
+  background-color: rgb(248, 48, 88);
+  border: none;
+  border-radius: 10px;
+  width: 20%;
+  padding: 10px;
+  color: azure;
+  font-size: 1.5rem;
+  left: 400px;
+  bottom: 80px;
+}
+p {
+  margin-bottom: 15px;
+}
+.soldOut {
+  background-color: aqua;
+  color: crimson;
+}
