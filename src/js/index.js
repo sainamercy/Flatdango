@@ -4,10 +4,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const movieDetailsContainer = document.querySelector("#movieDetails");
 
   // getting films data
-  fetch("http://localhost:3000/films")
+  fetch("https://sainamercy.github.io/Flatdango/db.json")
     .then((res) => res.json())
     .then((data) => {
-      displayMoviesList(data);
+      displayMoviesList(data.films);
     });
 
   //   displaying movies titles
