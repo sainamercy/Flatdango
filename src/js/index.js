@@ -2,6 +2,7 @@
 const moviesListContainer = document.querySelector("#moviesList");
 const movieDetailsContainer = document.querySelector("#movieDetails");
 
+document.addEventListener("DOMContentLoaded", ()=> {
 // getting films data
 fetch("http://localhost:3000/films")
   .then((res) => res.json())
@@ -38,7 +39,7 @@ function displayMovieDetails(movie) {
  <p id="showtime">Show Time: <span>${movie.showtime}</span></p>
  <p id="capacity">Theater capacity: <span>${movie.capacity}</span></p>
  <p id="ticketssold">Tickets sold: <span>${movie.tickets_sold}</span></p>
- <button class="custombtn" id="buyTicket">buy ticket</button>
+ <button class="custombtn" id="buyTicket">buy ticket 🎟️</button>
  </div>`;
 
   movieDetailsContainer.innerHTML = "";
@@ -58,10 +59,11 @@ function buyTicket(movie) {
 
   if (remainingTickets > 0) {
     movie.tickets_sold++;
-    btn.innerHTML = "buy ticket";
+    btn.innerHTML = "buy ticket 🎟️";
   } else {
     btn.innerHTML = "sold out";
     btn.classList.add("soldOut");
   }
   ticketsSold.innerHTML = `Tickets sold: <span>${movie.tickets_sold}</span>`;
 }
+})
